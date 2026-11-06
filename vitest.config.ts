@@ -8,5 +8,7 @@ export default defineConfig({
     globals: true,
     root: './',
     include: ['**/*.spec.ts'],
+    // Routes are covered by the e2e suite (npm run test:e2e).
+    passWithNoTests: true,
   },
 });
